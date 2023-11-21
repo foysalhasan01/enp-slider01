@@ -7,6 +7,17 @@
   --logo-blue: #1975bb;
   --light-orange: #f76045;
   --light-blue: #2fa5ff;
+
+  /* FROM JOYNOB */
+  --Ringside-Narrow: Ringside Narrow SSm A, Ringside Narrow SSm B;
+  --Ringside-Compressed: Ringside Compressed SSm A, Ringside Compressed SSm B;
+  --Ringside-Regular: Ringside Regular SSm A, Ringside Regular SSm B;
+  --Obsidian: Obsidian;
+
+  --Grey-title: #554c4c;
+  --Blue-title: #1975bb;
+  --Orange-title: #c85036;
+  --Content-Black: #403f3f;
 }
 * {
   margin: 0;
@@ -296,7 +307,6 @@ html {
   padding-top: 157px;
   padding-bottom: 50px;
 }
-
 .img-wrapper {
   background-size: cover;
   background-position: center;
@@ -327,6 +337,31 @@ html {
   -ms-animation: fade 3s linear forwards;
   -o-animation: fade 3s linear forwards;
   animation: fade 3s linear forwards;
+}
+
+/* CSS BY JOYNOB */
+.slider-heading {
+  font-family: var(--Ringside-Compressed);
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 60px;
+}
+
+.slider-sub-heading {
+  font-family: var(--Ringside-Narrow);
+  font-size: 42px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+.slider-content {
+  font-family: var(--Ringside-Narrow);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 /* ========================================================================================================================= */
