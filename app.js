@@ -2,10 +2,16 @@ document.addEventListener('DOMContentLoaded', function () {
   const sections = document.querySelectorAll('.section')
   const globalMenuItems = document.querySelectorAll('.global-menu a')
   const navigationMenuItems = document.querySelectorAll('.navigation-menu a')
+  const navigationMenu = document.querySelector('.navigation-menu')
   let currentIndex = 0
 
   // Function to show the current section with fade effect
   function showSection(index) {
+    if (index === 2) {
+      navigationMenu.classList.add('fixed-right')
+    } else {
+      navigationMenu.classList.remove('fixed-right')
+    }
     sections.forEach((section, i) => {
       if (i === index) {
         section.classList.add('active')
